@@ -1,0 +1,117 @@
+header {}
+header #gnb {
+    max-width:1720px;
+    margin:0 auto;
+    padding-top:10px;
+}
+header #gnb .top_menu {}
+header #gnb .top_menu ul {
+    display:flex; flex-flow:row nowrap; gap:20px;
+    justify-content:end;
+}
+header #gnb .top_menu ul li {}
+header #gnb .top_menu ul li a {}
+header #gnb .buttom_menu {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    padding:10px 0;
+    font-size:0.75rem;
+}
+header #gnb .buttom_menu #logo {}
+header #gnb .buttom_menu #logo h1 {}
+header #gnb .buttom_menu #logo h1 a {}
+header #gnb .buttom_menu #logo h1 a img {display:block;}
+header #gnb .buttom_menu .right_menu {}
+header #gnb .buttom_menu .right_menu ul {
+    display:flex; flex-flow:row nowrap; gap:20px;
+}
+header #gnb .buttom_menu .right_menu ul li {}
+header #gnb .buttom_menu .right_menu ul li a {}
+header #gnb .buttom_menu .right_menu ul li a img {display:block;}
+header #lnb {
+    max-width:1720px;
+    margin:0 auto;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header #lnb .category {}
+header #lnb .category ul {display:flex; align-items:center; gap:30px;}
+header #lnb .category ul .more_btn {}
+header #lnb .category ul li {}
+header #lnb .category ul li:nth-child(2) {margin-left:-10px;}
+header #lnb .category ul li button {display:block; font-weight:500;}
+header #lnb .category ul li button img {display:block;}
+header #lnb .search {
+    width:245px;
+    border:1px solid #000; border-radius:30px;
+    padding:0 14px;
+    display:flex; justify-content:end;
+}
+header #lnb .search .search_btn {}
+header #lnb .search .search_btn img {/* display:block; */}
+header .long_banner {
+    width:100%; height:30px;
+    background:#000;
+    position:relative;
+    margin-top:10px;
+}
+header .long_banner a {
+    color:#fff;
+    height:100%;
+    line-height:1.5;
+    text-align:center;
+    display:block;
+}
+header .long_banner a span {color:#00FF40;}
+header .long_banner .close_btn {
+    position:absolute;
+    right:0; top:0;
+}
+header .long_banner .close_btn img {display:block;}
+/* -------------------------------배너---------------------------------- */
+main {}
+main .banner_container {}
+main .banner_container .banner {}/* 스와이퍼 */
+main .banner_container .banner .swiper-wrapper {
+    /* display:flex; flex-flow:row nowrap; gap:30px; */
+    /* 아래 문제를 해결했기때문에 js에서 swiper 속성으로 gap 주기 */
+}
+main .banner_container .banner .swiper-wrapper .swiper_wrap {}
+main .banner_container .banner .swiper-wrapper .swiper-slide {}
+main .banner_container .banner .swiper-wrapper .swiper-slide a {}
+main .banner_container .banner .swiper-wrapper .swiper-slide a img {
+    width:100%; /* 아무리 gap을 줘도 배너간의 거리가 안벌어진 이유는 이미지의 크기가 원본 크기로 들어갔기때문이라서 부모의 크기만큼 꽉 채우는 100%값을 줘야함 */
+    display:block;
+}
+main .banner_container .swiper_btn_wrap {
+    max-width:1424px; height:20px;
+    margin:30px auto 0; padding:5px 0;
+    position:relative; /* 스와이퍼 슬라이드,페이지네이션,화살표의 기준으로 설정 */
+}
+main .banner_container .swiper_btn_wrap .swiper-scrollbar {
+    max-width:1200px; height:4px;
+}
+main .banner_container .swiper_btn_wrap .swiper-scrollbar .swiper-scrollbar-drag {
+    width:200px; height:5px;
+    background:#1B56FD;
+    position:absolute; top:0px;
+}
+main .banner_container .swiper_btn_wrap .swiper-pagination {
+    width:100%;
+    top:0; right:30px;
+    height:100%;
+    display:flex; justify-content:end; align-items:center; gap:3px;
+    padding-right:155px;
+    font-size:0.75rem;
+    line-height:1.5;
+}
+main .banner_container .swiper_btn_wrap .swiper-pagination .swiper-pagination-current {font-weight:900;}
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap {
+    background:blue;
+    position:absolute; 
+    width:60px; height:20px;
+    right:65px; top:0;  
+}
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap svg {display:none;} /* swiper 기본 화살표 제거 */
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap .swiper-button-prev {width:20px; margin-right:10px;}
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap .swiper-button-prev img {display:block;}
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap .swiper-button-next {width:20px;}
+main .banner_container .swiper_btn_wrap .swiper_arrow_wrap .swiper-button-next img {display:block;}

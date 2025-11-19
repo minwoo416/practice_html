@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>29cm 연습</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- 내가 만든 css등의 파일은 위에, 스와이퍼 cdn같은 외부에서 가져온것들은 밑으로 구분해서 작성 -->
+     <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div id="gnb">
+            <div class="top_menu">
+                <ul>
+                    <li><a href="#">NOTICE</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div>
+            <div class="buttom_menu">
+                <div id="logo"><h1><a href="./index.html"><img src="./images/logo.jpg" alt="29cm"></a></h1></div>
+                <div class="right_menu">
+                    <ul>
+                        <li><a href="#"><img src="./images/person_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/wishlist.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/shopping_cart_icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="lnb">
+            <div class="category">
+                <ul>
+                    <li><button type="button" class="more_btn"><img src="./images/category.png" alt="메뉴 더보기"></button></li>
+                    <li><button type="button">Best</button></li>
+                    <li><button type="button">New</button></li>
+                    <li><button type="button">Event</button></li>
+                    <li><button type="button">Men</button></li>
+                    <li><button type="button">Women</button></li>
+                    <li><button type="button">Kids</button></li>
+                    <li><button type="button">House</button></li>
+                    <li><button type="button">Lookbook</button></li>
+                </ul>
+            </div>
+            <div class="search">
+                <button type="button" class="search_btn"><img src="./images/search_icon.png" alt=""></button>
+            </div>
+        </div>
+        <div class="long_banner">
+            <a href="#"><span>이구위크</span> 최애 브랜드 단 하루 29%</a>
+            <button type="button" class="close_btn"><img src="./images/close.png" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <div class="banner_container">
+            <div class="swiper banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner001.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner002.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner003.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner001.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner002.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./images/banner003.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="swiper_btn_wrap">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper_arrow_wrap">
+                    <div class="swiper-button-prev"><img src="./images/prev_btn_icon.png" alt=""></div>
+                    <div class="swiper-button-next"><img src="./images/next_btn_icon.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
