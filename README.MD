@@ -6,3 +6,6 @@
 * 헤더 완성 (depth제외)
 * 배너 완성 (swiper)
 * long banner close js 완성
+## 2025-11-20
+* 스페셜 오더 완성
+* depth 연습중 (어려움 느끼는 중)
